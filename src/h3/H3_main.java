@@ -26,10 +26,10 @@ public class H3_main {
 			}
 		}
 
-		System.out.println("Max: " + max);
-		System.out.println("Fix: " + fix);
-		System.out.println("Wartend: " + wartend);
-		System.out.println("Ist voll: " + isVoll);
+		// System.out.println("Max: " + max);
+		// System.out.println("Fix: " + fix);
+		// System.out.println("Wartend: " + wartend);
+		// System.out.println("Ist voll: " + isVoll);
 	}
 
 }
