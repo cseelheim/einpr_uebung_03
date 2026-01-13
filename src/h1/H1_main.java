@@ -9,20 +9,29 @@ public class H1_main {
 		boolean warnhinweis = false;
 		boolean negativ = false;
 
-		negativ = true;
 		warnhinweis = false;
+		negativ = false;
 
 		if (guthaben > 0) {
-			rating += 3;
+			rating = rating + 3;
 		} else if (guthaben == 0) {
-			rating += 2;
+			rating = rating + 2;
 		} else { // guthaben < 0
 			negativ = true;
 
-			if (+monEingang >= +guthaben) {
-				rating += 1;
+			double guthabenBetrag = guthaben * -1.0;
+
+			double monEingangBetrag = monEingang;
+			if (monEingang < 0)
+				monEingangBetrag = monEingang * -1.0;
+
+//			System.out.println("Guthaben im Betrag: " + guthabenBetrag);
+//			System.out.println("Eingang im Betrag: " + monEingangBetrag);
+
+			if (monEingangBetrag >= guthabenBetrag) {
+				rating++;
 			} else {
-				rating -= 1;
+				rating--;
 
 				if (rating < 0) {
 					warnhinweis = true;
@@ -31,9 +40,9 @@ public class H1_main {
 
 		}
 
-		// System.out.println("Rating: " + rating);
-		// System.out.println("Negativ: " + negativ);
-		// System.out.println("Warnhinweis: " + warnhinweis);
+//		System.out.println("Negativ: " + negativ);
+//		System.out.println("Rating: " + rating);
+//		System.out.println("Warnhinweis: " + warnhinweis);
 	}
 
 }
