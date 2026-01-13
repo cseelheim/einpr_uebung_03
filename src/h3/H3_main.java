@@ -3,9 +3,9 @@ package h3;
 public class H3_main {
 
 	public static void main(String[] args) {
-		int max = 5;
-		int fix = 2;
-		int wartend = 12;
+		int max = 10;
+		int fix = 5;
+		int wartend = 0;
 		boolean isVoll = false;
 
 		if (fix >= max) {
@@ -26,10 +26,10 @@ public class H3_main {
 			}
 		}
 
-		// System.out.println("Max: " + max);
-		// System.out.println("Fix: " + fix);
-		// System.out.println("Wartend: " + wartend);
-		// System.out.println("Ist voll: " + isVoll);
+//		System.out.println("Max: " + max);
+//		System.out.println("Fix: " + fix);
+//		System.out.println("Wartend: " + wartend);
+//		System.out.println("Ist voll: " + isVoll);
 	}
 
 }

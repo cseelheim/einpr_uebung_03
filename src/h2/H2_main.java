@@ -3,7 +3,7 @@ package h2;
 public class H2_main {
 
 	public static void main(String[] args) {
-		int jahr = 2192;
+		int jahr = 2100;
 		boolean schalt = false;
 
 		if ((jahr % 4 == 0 && jahr % 100 != 0) || jahr % 400 == 0) {
@@ -12,7 +12,7 @@ public class H2_main {
 			schalt = false;
 		}
 
-		// System.out.println(jahr + ", Schaltjahr: " + schalt);
+//		 System.out.println(jahr + ", Schaltjahr: " + schalt);
 	}
 
 }
